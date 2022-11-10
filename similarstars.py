@@ -10,7 +10,7 @@ for star_data in stars:
     if(star_data[4] >= 0.7 and star_data[4] <= 1.0):
         star_mass.append(star_data[4])
         star_rad.append(star_data[5])
-
+        #Creo que hay un problema en el csv porque aparece esto '>=' not supported between instances of 'str' and 'float'
 fig = px.scatter(x=star_mass,y=star_rad)
 fig.show()
 print(star_mass)
